@@ -1,0 +1,220 @@
+/* ═══════════════════════════════════════════════════════════════
+   JOURNEY TRADES — legal.css
+   Scope: privacy.html + terms.html ONLY
+   Depends on: style.css (tokens, reset, base typography)
+   Isolation: No component CSS from style.css is overridden here.
+              This file extends — never conflicts.
+═══════════════════════════════════════════════════════════════ */
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL PAGE BODY STATE
+   Applied via <body class="page--legal">
+═══════════════════════════════════════════════════════════════ */
+
+.page--legal {
+  background-color: var(--color-bg-primary);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL PAGE WRAPPER
+   Accounts for fixed nav height. Never collapses.
+═══════════════════════════════════════════════════════════════ */
+
+.legal-page {
+  padding-top:    calc(var(--nav-height) + var(--space-64));
+  padding-bottom: var(--space-128);
+  min-height:     100vh;  /* Page always fills viewport — footer stays down */
+}
+
+@media (min-width: 768px) {
+  .legal-page {
+    padding-top:    calc(var(--nav-height) + var(--space-80));
+    padding-bottom: var(--space-128);
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL CONTENT CONTAINER
+   Width-constrained for readability. Never full-width.
+═══════════════════════════════════════════════════════════════ */
+
+.legal-content {
+  max-width:     var(--container-legal);  /* 680px */
+  margin-inline: auto;
+  padding-inline: 0;  /* Inherits from parent .container padding */
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL HEADER
+═══════════════════════════════════════════════════════════════ */
+
+.legal-header {
+  margin-bottom:  var(--space-64);
+  padding-bottom: var(--space-48);
+  border-bottom:  var(--border-default);
+}
+
+.legal-header h1 {
+  font-size:     var(--text-h2);  /* Intentionally one step down — not a homepage hero */
+  margin-bottom: var(--space-16);
+}
+
+.legal-meta {
+  font-size:   var(--text-caption);
+  color:       var(--color-text-secondary);
+  line-height: var(--lh-normal);
+  max-width:   none;  /* Override global p max-width for metadata */
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL TYPOGRAPHY HIERARCHY
+   Stable at all breakpoints. Never crowded. Never collapsed.
+═══════════════════════════════════════════════════════════════ */
+
+.legal-content h2 {
+  font-size:    var(--text-h3);
+  margin-top:   var(--space-64);
+  margin-bottom: var(--space-24);
+  padding-top:  var(--space-48);
+  border-top:   var(--border-default);
+}
+
+/* First h2 doesn't need a top border — legal-header provides separation */
+.legal-content h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top:  0;
+}
+
+.legal-content h3 {
+  font-size:     var(--text-sub);
+  font-weight:   600;
+  margin-top:    var(--space-48);
+  margin-bottom: var(--space-16);
+  color:         var(--color-text-primary);
+}
+
+.legal-content p {
+  font-size:     var(--text-body);
+  line-height:   var(--lh-relaxed);
+  color:         var(--color-text-primary);
+  margin-bottom: var(--space-20);
+  max-width:     none;  /* Container constrains — not individual paragraphs */
+}
+
+.legal-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Lists ────────────────────────────────────────────────────── */
+.legal-content ul,
+.legal-content ol {
+  margin-top:    var(--space-16);
+  margin-bottom: var(--space-24);
+  padding-left:  var(--space-24);
+}
+
+.legal-content ul {
+  list-style: disc;
+}
+
+.legal-content ol {
+  list-style: decimal;
+}
+
+.legal-content li {
+  font-size:     var(--text-body);
+  line-height:   var(--lh-relaxed);
+  color:         var(--color-text-primary);
+  margin-bottom: var(--space-8);
+  overflow-wrap: break-word;
+}
+
+.legal-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Links inside legal content ──────────────────────────────── */
+.legal-content a {
+  color:           var(--color-accent-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition:      color var(--duration-fast) var(--ease-default);
+}
+
+.legal-content a:hover {
+  color: var(--color-text-primary);
+}
+
+/* ── Strong / Em ─────────────────────────────────────────────── */
+.legal-content strong {
+  font-weight: 600;
+  color:       var(--color-text-primary);
+}
+
+.legal-content em {
+  font-style: italic;
+  color:      var(--color-text-secondary);
+}
+
+/* ── Blockquote / callout ────────────────────────────────────── */
+.legal-content blockquote {
+  margin-block:  var(--space-32);
+  padding:       var(--space-24) var(--space-32);
+  border-left:   3px solid var(--color-accent-brass);
+  background:    var(--color-bg-alt);
+}
+
+.legal-content blockquote p {
+  margin-bottom: 0;
+  color:         var(--color-text-secondary);
+  font-size:     var(--text-body-lg);
+}
+
+/* ── Address block ───────────────────────────────────────────── */
+.legal-content address {
+  margin-block:  var(--space-24);
+  padding:       var(--space-24);
+  border:        var(--border-default);
+  font-size:     var(--text-body);
+  line-height:   var(--lh-relaxed);
+  color:         var(--color-text-primary);
+}
+
+/* ── Section spacing utility (legal-specific) ────────────────── */
+.legal-section {
+  margin-bottom: var(--space-48);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGAL — RESPONSIVE
+   The content container handles most cases.
+   These rules handle edge cases at narrow viewports.
+═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+
+  .legal-content h2 {
+    font-size:  var(--text-h3);
+    margin-top: var(--space-48);
+  }
+
+  .legal-content h3 {
+    font-size: var(--text-body-lg);
+  }
+
+  .legal-content blockquote {
+    padding: var(--space-20) var(--space-24);
+  }
+
+  .legal-content ul,
+  .legal-content ol {
+    padding-left: var(--space-20);
+  }
+}
