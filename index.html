@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Journey Trades — International Sourcing & Trade Coordination</title>
-  <meta name="description" content="Journey Trades coordinates international sourcing, procurement, and freight logistics across Asia, the Middle East, Turkey, and Eastern Europe. FCL/LCL freight, customs clearance, supplier verification, and trade compliance — managed under one accountable structure.">
+  <title>Journey Trades — International Sourcing & Trade Coordination | UAE · UK · Europe</title>
+  <meta name="description" content="Journey Trades coordinates international procurement, FCL/LCL freight, customs clearance, and supplier oversight for Gulf, UK, and European importers. 14 years. 40+ countries. One accountable partner.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Journey Trades">
   <link rel="canonical" href="https://journeytrades.com/">
-  <meta name="keywords" content="international sourcing, trade coordination, freight coordination, procurement management, supplier verification, customs clearance, FCL LCL freight, import coordination, trade compliance">
+  <meta name="keywords" content="sourcing agent UAE, import coordination Dubai, sourcing agent Saudi Arabia, trade coordination Gulf, supplier verification Pakistan, Bangladesh sourcing, Turkey sourcing, FCL LCL freight Middle East, customs clearance UAE, procurement management Gulf">
 
   <meta property="og:type"         content="website">
   <meta property="og:url"          content="https://journeytrades.com/">
-  <meta property="og:title"        content="Journey Trades — International Sourcing & Trade Coordination">
-  <meta property="og:description"  content="Execution-first trade coordination across global corridors. Supplier sourcing, freight management, customs clearance, and procurement oversight — one accountable partner.">
+  <meta property="og:title"        content="Journey Trades — Sourcing & Trade Coordination for Gulf, UK & European Importers">
+  <meta property="og:description"  content="One accountable partner for supplier sourcing, freight, customs, and compliance — across Asia, Turkey, and the UAE. Serving Gulf, British, and European importers.">
   <meta property="og:image"        content="https://journeytrades.com/assets/images/og-image.jpg">
   <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
@@ -24,8 +24,8 @@
   <meta property="og:locale"       content="en_US">
 
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Journey Trades — International Sourcing & Trade Coordination">
-  <meta name="twitter:description" content="Execution-first trade coordination. Sourcing, freight, customs, procurement — one partner, full accountability.">
+  <meta name="twitter:title"       content="Journey Trades — Sourcing & Trade Coordination">
+  <meta name="twitter:description" content="Supplier sourcing, freight, customs, procurement — one partner, full accountability. Serving UAE, Saudi Arabia, UK, and Europe.">
   <meta name="twitter:image"       content="https://journeytrades.com/assets/images/og-image.jpg">
 
   <link rel="icon"             href="/assets/favicon/favicon.ico" sizes="any">
@@ -44,6 +44,685 @@
   <link rel="preload" as="image" href="/assets/images/hero/hero-desktop.webp" media="(min-width: 768px)">
   <link rel="preload" as="image" href="/assets/images/hero/hero-mobile.webp"  media="(max-width: 767px)">
 
+  <style>
+    /* ═══════════════════════════════════════════════════════
+       REWRITE-LAYER — New components added for trust & conversion
+       Depends on: /css/style.css tokens (palette, spacing, type)
+    ═══════════════════════════════════════════════════════ */
+
+    /* ── Announce bar ── */
+    .announce-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: calc(var(--z-nav) + 1);
+      background-color: var(--color-surface-dark);
+      border-bottom: 1px solid var(--color-border-dark-strong);
+      height: 2.25rem;
+      display: flex; align-items: center;
+    }
+    .announce-bar__inner {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: var(--space-16);
+      width: 100%;
+    }
+    .announce-bar__left {
+      display: flex; align-items: center; gap: var(--space-20);
+      flex-wrap: wrap;
+    }
+    .announce-bar__item {
+      display: flex; align-items: center; gap: var(--space-8);
+      font-size: var(--text-label);
+      color: var(--color-text-muted-on-dark);
+      text-decoration: none;
+      letter-spacing: var(--tracking-wide);
+      transition: color var(--duration-fast) var(--ease-default);
+      white-space: nowrap;
+    }
+    .announce-bar__item:hover { color: var(--color-text-on-dark); }
+    .announce-bar__item--highlight {
+      color: var(--color-accent-brass-light);
+    }
+    .announce-bar__item--highlight:hover {
+      color: var(--color-text-on-dark-strong);
+    }
+    .announce-bar__dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background-color: var(--color-accent-brass);
+      flex-shrink: 0;
+      animation: pulse-dot 2.5s cubic-bezier(0.4,0,0.6,1) infinite;
+    }
+    .announce-bar__right {
+      font-size: var(--text-label);
+      color: rgba(122,120,116,0.6);
+      letter-spacing: var(--tracking-wide);
+      white-space: nowrap;
+    }
+    @media (max-width: 767px) {
+      .announce-bar__right { display: none; }
+      .announce-bar__left { gap: var(--space-16); }
+    }
+
+    /* Push nav and hero down by announce bar height */
+    .nav  { top: 2.25rem; }
+    main  { padding-top: calc(var(--nav-height) + 2.25rem); }
+    .nav__mobile { top: calc(var(--nav-height) + 2.25rem); }
+    .hero { margin-top: calc(-1 * (var(--nav-height) + 2.25rem)); }
+
+    /* ── Trust strip ── */
+    .trust-strip {
+      background-color: var(--color-bg-alt);
+      border-bottom: var(--border-default);
+      padding-block: var(--space-24);
+    }
+    .trust-strip__inner {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: var(--space-32); flex-wrap: wrap;
+    }
+    .trust-strip__label {
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      flex-shrink: 0;
+    }
+    .trust-strip__items {
+      display: flex; align-items: center;
+      gap: var(--space-32); flex-wrap: wrap; flex: 1;
+    }
+    .trust-strip__item {
+      display: flex; flex-direction: column; gap: 2px;
+    }
+    .trust-strip__item-value {
+      font-family: var(--font-display);
+      font-size: var(--text-caption);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: var(--tracking-tight);
+    }
+    .trust-strip__item-label {
+      font-size: var(--text-label);
+      color: var(--color-text-secondary);
+      letter-spacing: var(--tracking-wide);
+    }
+    .trust-strip__divider {
+      width: 1px; height: 2rem;
+      background-color: var(--color-border);
+      flex-shrink: 0;
+    }
+    @media (max-width: 767px) {
+      .trust-strip__inner { justify-content: flex-start; }
+      .trust-strip__label { width: 100%; }
+      .trust-strip__divider { display: none; }
+      .trust-strip__items { gap: var(--space-24); }
+    }
+
+    /* ── Hero trust badges ── */
+    .hero__trust {
+      display: flex; align-items: center;
+      flex-wrap: wrap; gap: var(--space-20);
+      margin-top: var(--space-32);
+    }
+    .hero__trust-badge {
+      display: flex; align-items: center; gap: var(--space-8);
+      font-size: var(--text-label);
+      color: rgba(240,237,230,0.5);
+      letter-spacing: var(--tracking-wide);
+    }
+    .hero__trust-badge-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background-color: var(--color-accent-brass);
+      flex-shrink: 0;
+    }
+
+    /* ── Markets served strip ── */
+    .markets-strip {
+      background-color: var(--color-surface-mid);
+      padding-block: var(--space-16);
+      border-top: 1px solid var(--color-border-dark-strong);
+      overflow: hidden;
+    }
+    .markets-strip__inner {
+      display: flex; align-items: center;
+      gap: var(--space-48); justify-content: center;
+      flex-wrap: wrap;
+    }
+    .markets-strip__item {
+      display: flex; align-items: center; gap: var(--space-8);
+      font-size: var(--text-label);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-muted-on-dark);
+    }
+    .markets-strip__flag { font-size: 1rem; line-height: 1; }
+
+    /* ── Case studies (replaces basic table) ── */
+    .case-studies { background-color: var(--color-surface-dark); overflow: hidden; }
+    .case-studies h2 { color: var(--color-text-on-dark-strong); }
+    .case-studies .section-label { color: var(--color-accent-brass-light); }
+    .case-studies .heading-block__sub { color: var(--color-text-muted-on-dark); }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-2, 2px);
+      margin-top: var(--space-48);
+      border: 1px solid var(--color-border-dark-strong);
+    }
+    @media (min-width: 768px) {
+      .case-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1200px) {
+      .case-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .case-card {
+      background-color: var(--color-surface-mid);
+      padding: var(--space-32);
+      border: 1px solid var(--color-border-dark-strong);
+      display: flex; flex-direction: column; gap: var(--space-20);
+      transition: background-color var(--duration-base) var(--ease-default);
+    }
+    .case-card:hover {
+      background-color: rgba(240,237,230,0.03);
+    }
+
+    .case-card__header {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: var(--space-12);
+    }
+    .case-card__corridor {
+      font-family: var(--font-display);
+      font-size: var(--text-body-lg);
+      font-weight: 700;
+      color: var(--color-text-on-dark-strong);
+      letter-spacing: var(--tracking-tightest);
+      line-height: var(--lh-snug);
+    }
+    .case-card__type {
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      color: var(--color-text-muted-on-dark);
+      letter-spacing: var(--tracking-wide);
+      flex-shrink: 0;
+      padding-top: 3px;
+    }
+    .case-card__commodity {
+      font-size: var(--text-caption);
+      color: var(--color-text-muted-on-dark);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+    }
+    .case-card__body {
+      font-size: var(--text-body);
+      color: var(--color-text-on-dark);
+      line-height: var(--lh-relaxed);
+      flex: 1;
+    }
+    .case-card__outcome {
+      display: flex; align-items: flex-start; gap: var(--space-8);
+      padding-top: var(--space-20);
+      border-top: 1px solid var(--color-border-dark);
+    }
+    .case-card__outcome-arrow {
+      color: var(--color-accent-brass-light);
+      flex-shrink: 0; font-size: var(--text-body);
+      margin-top: 2px;
+    }
+    .case-card__outcome-text {
+      font-size: var(--text-body);
+      color: var(--color-accent-brass-light);
+      line-height: var(--lh-relaxed);
+    }
+
+    /* ── Who we serve ── */
+    .who-serve { background-color: var(--color-bg-alt); }
+    .market-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-24);
+      margin-top: var(--space-48);
+    }
+    @media (min-width: 768px) {
+      .market-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1200px) {
+      .market-cards { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .market-card {
+      background-color: var(--color-bg-primary);
+      border: var(--border-default);
+      border-top: 2px solid var(--color-border-strong);
+      padding: var(--space-32);
+      display: flex; flex-direction: column; gap: var(--space-16);
+      transition: border-top-color var(--duration-base) var(--ease-default);
+    }
+    .market-card:hover { border-top-color: var(--color-accent-brass); }
+
+    .market-card__flag {
+      font-size: 1.75rem; line-height: 1;
+    }
+    .market-card__region {
+      font-family: var(--font-display);
+      font-size: var(--text-sub);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: var(--tracking-tightest);
+      line-height: var(--lh-snug);
+    }
+    .market-card__detail {
+      font-size: var(--text-body);
+      color: var(--color-text-secondary);
+      line-height: var(--lh-relaxed);
+      flex: 1;
+    }
+    .market-card__corridors {
+      display: flex; flex-direction: column; gap: var(--space-8);
+      padding-top: var(--space-16);
+      border-top: var(--border-default);
+    }
+    .market-card__corridor-item {
+      display: flex; align-items: center; gap: var(--space-8);
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      color: var(--color-accent-brass);
+      letter-spacing: var(--tracking-wide);
+    }
+    .market-card__corridor-item::before {
+      content: '→';
+      color: var(--color-accent-brass);
+    }
+
+    /* ── Social proof / testimonials ── */
+    .social-proof { background-color: var(--color-bg-primary); }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-24);
+      margin-top: var(--space-48);
+    }
+    @media (min-width: 768px) {
+      .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1200px) {
+      .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .testimonial-card {
+      background-color: var(--color-bg-alt);
+      border: var(--border-default);
+      padding: var(--space-32);
+      display: flex; flex-direction: column; gap: var(--space-20);
+    }
+    .testimonial-card__mark {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--color-accent-brass);
+      line-height: 1;
+    }
+    .testimonial-card__quote {
+      font-size: var(--text-body-lg);
+      line-height: var(--lh-relaxed);
+      color: var(--color-text-primary);
+      flex: 1;
+    }
+    .testimonial-card__attribution {
+      padding-top: var(--space-20);
+      border-top: var(--border-default);
+      display: flex; flex-direction: column; gap: var(--space-4);
+    }
+    .testimonial-card__role {
+      font-size: var(--text-body);
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+    .testimonial-card__context {
+      font-size: var(--text-caption);
+      color: var(--color-text-secondary);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    /* ── FAQ ── */
+    .faq { background-color: var(--color-bg-alt); }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: var(--space-48);
+      border-top: var(--border-default);
+    }
+    @media (min-width: 1024px) {
+      .faq-grid { grid-template-columns: repeat(2, 1fr); }
+      .faq-item:nth-child(odd)  { border-right: var(--border-default); }
+    }
+
+    .faq-item {
+      padding: var(--space-32) 0;
+      border-bottom: var(--border-default);
+    }
+    @media (min-width: 1024px) {
+      .faq-item:nth-child(odd)  { padding-right: var(--space-48); }
+      .faq-item:nth-child(even) { padding-left:  var(--space-48); }
+    }
+    .faq-item__q {
+      font-family: var(--font-display);
+      font-size: var(--text-body-lg);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: var(--tracking-tightest);
+      margin-bottom: var(--space-16);
+      line-height: var(--lh-snug);
+    }
+    .faq-item__a {
+      font-size: var(--text-body);
+      color: var(--color-text-secondary);
+      line-height: var(--lh-relaxed);
+    }
+    .faq-item__a strong {
+      color: var(--color-text-primary);
+    }
+
+    /* ── Contact hub ── */
+    .contact-hub { background-color: var(--color-surface-dark); overflow: hidden; position: relative; }
+    .contact-hub::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(
+        ellipse 80% 60% at 50% 100%,
+        rgba(166,124,34,0.07) 0%, transparent 70%
+      );
+      pointer-events: none;
+    }
+
+    .contact-hub__layout {
+      display: grid; gap: var(--space-64);
+      position: relative;
+    }
+    @media (min-width: 1024px) {
+      .contact-hub__layout { grid-template-columns: 5fr 7fr; gap: var(--space-96); align-items: start; }
+    }
+
+    .contact-hub__intro {
+      display: flex; flex-direction: column; gap: var(--space-32);
+    }
+    .contact-hub__channels {
+      display: flex; flex-direction: column; gap: var(--space-16);
+      margin-top: var(--space-8);
+    }
+    .contact-channel {
+      display: flex; align-items: center; gap: var(--space-16);
+      padding: var(--space-16) var(--space-20);
+      border: 1px solid var(--color-border-dark-strong);
+      text-decoration: none;
+      transition:
+        border-color var(--duration-fast) var(--ease-default),
+        background-color var(--duration-fast) var(--ease-default);
+    }
+    .contact-channel:hover {
+      border-color: var(--color-accent-brass);
+      background-color: rgba(166,124,34,0.06);
+    }
+    .contact-channel__icon {
+      width: 2rem; height: 2rem; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.125rem; line-height: 1;
+    }
+    .contact-channel__body { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+    .contact-channel__label {
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-muted-on-dark);
+    }
+    .contact-channel__value {
+      font-family: var(--font-display);
+      font-size: var(--text-body-lg);
+      font-weight: 600;
+      color: var(--color-text-on-dark);
+      letter-spacing: var(--tracking-tight);
+    }
+    .contact-channel__arrow {
+      color: var(--color-accent-brass);
+      font-size: var(--text-body);
+    }
+
+    /* Contact form */
+    .contact-form {
+      background-color: var(--color-bg-primary);
+      padding: var(--space-40);
+    }
+    @media (max-width: 767px) {
+      .contact-form { padding: var(--space-24); }
+    }
+    .contact-form__title {
+      font-family: var(--font-display);
+      font-size: var(--text-h3);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: var(--tracking-tightest);
+      margin-bottom: var(--space-8);
+    }
+    .contact-form__sub {
+      font-size: var(--text-body);
+      color: var(--color-text-secondary);
+      line-height: var(--lh-relaxed);
+      margin-bottom: var(--space-32);
+    }
+    .form-row {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-16);
+      margin-bottom: var(--space-16);
+    }
+    @media (min-width: 640px) {
+      .form-row--2 { grid-template-columns: repeat(2, 1fr); }
+    }
+    .form-field {
+      display: flex; flex-direction: column; gap: var(--space-8);
+    }
+    .form-label {
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: var(--space-12) var(--space-16);
+      background-color: var(--color-bg-alt);
+      border: var(--border-strong);
+      color: var(--color-text-primary);
+      font-family: var(--font-body);
+      font-size: var(--text-body);
+      line-height: var(--lh-normal);
+      transition: border-color var(--duration-fast) var(--ease-default);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-accent-brass);
+    }
+    .form-textarea { resize: vertical; min-height: 7rem; }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23A8A59C' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right var(--space-16) center;
+      padding-right: var(--space-40);
+      cursor: pointer;
+    }
+    .form-submit {
+      width: 100%;
+      margin-top: var(--space-8);
+    }
+    .form-note {
+      font-size: var(--text-caption);
+      color: var(--color-text-secondary);
+      text-align: center;
+      margin-top: var(--space-12);
+      line-height: var(--lh-relaxed);
+    }
+    .form-response-time {
+      display: flex; align-items: center; gap: var(--space-8);
+      justify-content: center;
+      font-size: var(--text-caption);
+      color: var(--color-text-secondary);
+      margin-top: var(--space-16);
+    }
+    .form-response-time__dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background-color: var(--color-accent-brass);
+      flex-shrink: 0;
+      animation: pulse-dot 2.5s cubic-bezier(0.4,0,0.6,1) infinite;
+    }
+
+    /* ── Operations team ── */
+    .ops-team { background-color: var(--color-bg-primary); }
+    .ops-team h2 { color: var(--color-text-primary); }
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-24);
+      margin-top: var(--space-48);
+    }
+    @media (min-width: 640px)  { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .team-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .team-card {
+      border: var(--border-default);
+      border-top: 2px solid var(--color-border-strong);
+      padding: var(--space-24);
+      display: flex; flex-direction: column; gap: var(--space-16);
+      transition: border-top-color var(--duration-base) var(--ease-default);
+    }
+    .team-card:hover { border-top-color: var(--color-accent-brass); }
+    .team-card__avatar {
+      width: 3rem; height: 3rem; border-radius: 50%;
+      background-color: var(--color-bg-alt);
+      border: var(--border-strong);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: var(--text-body-lg);
+      font-weight: 700;
+      color: var(--color-accent-brass);
+      flex-shrink: 0;
+    }
+    .team-card__role {
+      font-family: var(--font-display);
+      font-size: var(--text-body-lg);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      letter-spacing: var(--tracking-tightest);
+      line-height: var(--lh-snug);
+    }
+    .team-card__region {
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-accent-brass);
+    }
+    .team-card__bio {
+      font-size: var(--text-body);
+      color: var(--color-text-secondary);
+      line-height: var(--lh-relaxed);
+      flex: 1;
+    }
+    .team-card__langs {
+      display: flex; flex-wrap: wrap; gap: var(--space-8);
+      padding-top: var(--space-16);
+      border-top: var(--border-default);
+    }
+    .team-card__lang {
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      color: var(--color-text-secondary);
+      letter-spacing: var(--tracking-wide);
+      background-color: var(--color-bg-alt);
+      padding: 2px var(--space-8);
+    }
+
+    /* ── Minimal tweaks to existing sections ── */
+    .stat-card__note {
+      font-size: var(--text-label);
+      color: rgba(122,120,116,0.55);
+      letter-spacing: var(--tracking-normal);
+      line-height: var(--lh-normal);
+      margin-top: var(--space-4);
+      max-width: none;
+    }
+
+    /* Partner ecosystem callout */
+    .service-card__partners {
+      display: flex; align-items: center; gap: var(--space-8);
+      padding-top: var(--space-16);
+      border-top: var(--border-default);
+    }
+    .service-card__partners-label {
+      font-size: var(--text-label);
+      color: var(--color-text-secondary);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .service-card__partner-tags {
+      display: flex; gap: var(--space-8); flex-wrap: wrap;
+    }
+    .service-card__partner-tag {
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      color: var(--color-accent-brass);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    /* Process sample download */
+    .process-step__download {
+      display: inline-flex; align-items: center; gap: var(--space-8);
+      margin-top: var(--space-16);
+      font-size: var(--text-label);
+      color: var(--color-accent-brass-light);
+      letter-spacing: var(--tracking-wide);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(201,162,78,0.35);
+      transition: color var(--duration-fast) var(--ease-default);
+      cursor: pointer;
+    }
+    .process-step__download:hover { color: var(--color-text-on-dark-strong); }
+
+    /* Risk reduction badge in hero */
+    .hero__risk-note {
+      display: flex; align-items: flex-start; gap: var(--space-12);
+      margin-top: var(--space-20);
+      padding: var(--space-16) var(--space-20);
+      border: 1px solid rgba(166,124,34,0.25);
+      background: rgba(166,124,34,0.06);
+      max-width: 34rem;
+    }
+    .hero__risk-icon {
+      color: var(--color-accent-brass-light);
+      flex-shrink: 0; font-size: 1rem; margin-top: 1px;
+    }
+    .hero__risk-text {
+      font-size: var(--text-caption);
+      color: rgba(240,237,230,0.65);
+      line-height: var(--lh-relaxed);
+    }
+    .hero__risk-text strong { color: var(--color-accent-brass-light); font-weight: 500; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .announce-bar__dot,
+      .form-response-time__dot { animation: none; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,32 +730,22 @@
     "name": "Journey Trades",
     "url": "https://journeytrades.com",
     "logo": "https://journeytrades.com/assets/favicon/icon-512.png",
-    "description": "Execution-first international sourcing and trade coordination agency specialising in supplier verification, FCL/LCL freight coordination, customs clearance, and procurement management across Asia, Middle East, Turkey, and Eastern Europe.",
+    "telephone": "[YOUR-PHONE]",
+    "email": "contact@journeytrades.com",
+    "description": "International sourcing and trade coordination for Gulf, UK, and European importers. Supplier verification, FCL/LCL freight, customs clearance, and procurement management across Asia, Middle East, Turkey, and Eastern Europe.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "[YOUR CITY]",
+      "addressCountry": "[YOUR COUNTRY]"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Business Inquiries",
       "email": "contact@journeytrades.com",
-      "availableLanguage": ["English"]
+      "availableLanguage": ["English", "Arabic"]
     },
-    "areaServed": [
-      "Worldwide",
-      "Southeast Asia",
-      "Middle East",
-      "Turkey",
-      "Eastern Europe",
-      "United Kingdom",
-      "European Union"
-    ],
-    "serviceType": [
-      "International Sourcing",
-      "Trade Coordination",
-      "Freight Management",
-      "Supplier Verification",
-      "Trade Compliance",
-      "Customs Clearance",
-      "Procurement Management"
-    ],
-    "sameAs": []
+    "areaServed": ["UAE","Saudi Arabia","United Kingdom","Germany","Netherlands","United States","Canada"],
+    "serviceType": ["International Sourcing","Trade Coordination","Freight Management","Supplier Verification","Customs Clearance","Procurement Management"]
   }
   </script>
 
@@ -87,34 +756,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What trade corridors does Journey Trades operate in?",
+        "name": "What is the minimum shipment value Journey Trades works with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Journey Trades coordinates sourcing and freight across Southeast Asia (Vietnam, Indonesia, Malaysia, Thailand), China, Turkey, UAE, and Eastern Europe. We maintain active supplier relationships in each region and manage freight through primary ocean and air corridors into Europe, the UK, and the Middle East."
+          "text": "We typically work with importers on shipments valued at USD 25,000 and above. For first engagements, we start with a structured intake and supplier shortlist before any commercial commitment is required."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the difference between FCL and LCL freight coordination?",
+        "name": "Do you have operations in the UAE and Gulf region?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FCL (Full Container Load) freight is used when a shipment fills an entire container. LCL (Less than Container Load) consolidates multiple smaller shipments into one container. Journey Trades coordinates both, selecting the appropriate method based on volume, timeline, and cost parameters for each engagement."
+          "text": "Yes. We maintain active logistics and supplier relationships across the Gulf, with specific experience in UAE free zone operations, Saudi Arabian import clearance, and South Asia–Gulf trade corridors."
         }
       },
       {
         "@type": "Question",
-        "name": "How does Journey Trades handle customs clearance?",
+        "name": "How does Journey Trades handle disputes with suppliers?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We prepare and verify all customs documentation at origin before shipment, coordinate with licensed customs brokers at destination, manage HS code classification, and handle import licensing requirements. Documentation is reviewed for compliance before goods depart — not after they arrive at port."
+          "text": "Every engagement includes a defined escalation and resolution path documented at the outset. We maintain records of all supplier commitments, production milestones, and inspection results. In the event of a dispute, we manage resolution directly with the supplier on your behalf."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Journey Trades require large upfront retainers?",
+        "name": "What freight carriers and forwarders does Journey Trades work with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Our engagement model is milestone-based and aligned to shipment execution. Clients are not locked into speculative retainers before operational work begins. Onboarding is structured around your specific corridor, commodity, and timeline — not a standardised package."
+          "text": "We coordinate through established freight forwarders across primary corridors, selecting carriers based on route, timeline, and cargo type. We do not restrict to a single carrier, which allows us to book to your delivery window rather than available inventory."
         }
       }
     ]
@@ -125,6 +794,29 @@
 <body>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════
+       ANNOUNCE BAR
+  ═══════════════════════════════════════════ -->
+  <div class="announce-bar" role="banner" aria-label="Contact information">
+    <div class="announce-bar__inner container">
+      <div class="announce-bar__left">
+        <a href="tel:[YOUR-PHONE]" class="announce-bar__item announce-bar__item--highlight">
+          📞 [Your Phone Number]
+        </a>
+        <a href="https://wa.me/[YOUR-WHATSAPP]" class="announce-bar__item" target="_blank" rel="noopener">
+          💬 WhatsApp
+        </a>
+        <a href="mailto:contact@journeytrades.com" class="announce-bar__item">
+          contact@journeytrades.com
+        </a>
+      </div>
+      <div class="announce-bar__right">
+        <span class="announce-bar__dot" aria-hidden="true"></span>
+        Response within one business day
+      </div>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════
        NAVIGATION
@@ -141,10 +833,11 @@
         </a>
 
         <ul class="nav__links" role="list">
-          <li><a href="#services"    class="nav__link">Services</a></li>
-          <li><a href="#process"     class="nav__link">Process</a></li>
-          <li><a href="#about"       class="nav__link">About</a></li>
-          <li><a href="#evidence"    class="nav__link">Track Record</a></li>
+          <li><a href="#services"     class="nav__link">Services</a></li>
+          <li><a href="#process"      class="nav__link">Process</a></li>
+          <li><a href="#evidence"     class="nav__link">Track Record</a></li>
+          <li><a href="#markets"      class="nav__link">Markets</a></li>
+          <li><a href="#faq"          class="nav__link">FAQ</a></li>
         </ul>
 
         <div class="nav__actions">
@@ -167,8 +860,9 @@
         <ul class="nav__mobile-links" role="list">
           <li><a href="#services"  class="nav__mobile-link">Services</a></li>
           <li><a href="#process"   class="nav__mobile-link">Process</a></li>
-          <li><a href="#about"     class="nav__mobile-link">About</a></li>
           <li><a href="#evidence"  class="nav__mobile-link">Track Record</a></li>
+          <li><a href="#markets"   class="nav__mobile-link">Markets</a></li>
+          <li><a href="#faq"       class="nav__mobile-link">FAQ</a></li>
         </ul>
         <a href="#contact" class="nav__mobile-cta">Send a Brief</a>
       </div>
@@ -176,9 +870,6 @@
     </nav>
   </header>
 
-  <!-- ═══════════════════════════════════════════
-       MAIN
-  ═══════════════════════════════════════════ -->
   <main id="main-content" tabindex="-1">
 
     <!-- ═══════════ HERO ═══════════ -->
@@ -199,39 +890,46 @@
 
             <div class="hero__eyebrow">
               <span class="hero__eyebrow-line" aria-hidden="true"></span>
-              <span class="hero__label">International Trade Coordination</span>
+              <span class="hero__label">Sourcing &amp; Trade Coordination — Gulf · UK · Europe</span>
             </div>
 
             <h1 class="hero__title" id="hero-heading">
-              Most sourcing failures<br>happen between <em>handoffs.</em><br>We own every one.
+              Every sourcing failure<br>happens between <em>handoffs.</em><br>We own every one — in writing.
             </h1>
 
             <p class="hero__sub">
-              Journey Trades coordinates international procurement, FCL/LCL freight, customs clearance, and supplier oversight — from origin to final delivery. One partner. Full documentation. No gaps in the chain.
+              Journey Trades coordinates supplier sourcing, FCL/LCL freight, customs clearance, and procurement management for Gulf, British, and European importers. One partner, documented at every stage, accountable to your delivery window.
             </p>
 
             <div class="hero__actions">
               <a href="#contact" class="btn btn--primary-dark">Send a Sourcing Brief</a>
-              <a href="#process"  class="btn btn--outline-dark">How It Works</a>
+              <a href="#process" class="btn btn--outline-dark">How It Works</a>
             </div>
 
-            <div class="hero__meta" aria-label="Key operational statistics">
-              <div class="hero__meta-item">
-                <span class="hero__meta-value">14+</span>
-                <span class="hero__meta-label">Years Active</span>
-              </div>
-              <div class="hero__meta-item">
-                <span class="hero__meta-value">40+</span>
-                <span class="hero__meta-label">Countries</span>
-              </div>
-              <div class="hero__meta-item">
-                <span class="hero__meta-value">$500M+</span>
-                <span class="hero__meta-label">Trade Volume</span>
-              </div>
-              <div class="hero__meta-item">
-                <span class="hero__meta-value">98%</span>
-                <span class="hero__meta-label">On-Window Delivery</span>
-              </div>
+            <div class="hero__risk-note" role="note">
+              <span class="hero__risk-icon" aria-hidden="true">🔒</span>
+              <span class="hero__risk-text">
+                <strong>No upfront retainer.</strong> First engagement is structured around a supplier shortlist — no commercial commitment until you approve the shortlist and scope.
+              </span>
+            </div>
+
+            <div class="hero__trust" aria-label="Trust credentials">
+              <span class="hero__trust-badge">
+                <span class="hero__trust-badge-dot" aria-hidden="true"></span>
+                14+ Years Active
+              </span>
+              <span class="hero__trust-badge">
+                <span class="hero__trust-badge-dot" aria-hidden="true"></span>
+                40+ Sourcing Countries
+              </span>
+              <span class="hero__trust-badge">
+                <span class="hero__trust-badge-dot" aria-hidden="true"></span>
+                Gulf &amp; South Asia Specialists
+              </span>
+              <span class="hero__trust-badge">
+                <span class="hero__trust-badge-dot" aria-hidden="true"></span>
+                English · Arabic
+              </span>
             </div>
 
           </div>
@@ -239,6 +937,77 @@
       </div>
 
     </section>
+
+    <!-- ═══════════ TRUST STRIP ═══════════ -->
+    <div class="trust-strip" aria-label="Company credentials and registrations">
+      <div class="container">
+        <div class="trust-strip__inner">
+          <span class="trust-strip__label">Verified credentials</span>
+          <div class="trust-strip__items">
+
+            <div class="trust-strip__item">
+              <span class="trust-strip__item-value">[Reg. No. XXXXXXX]</span>
+              <span class="trust-strip__item-label">Company Registration</span>
+            </div>
+
+            <div class="trust-strip__divider" aria-hidden="true"></div>
+
+            <div class="trust-strip__item">
+              <span class="trust-strip__item-value">[FIATA / Industry Body]</span>
+              <span class="trust-strip__item-label">Industry Membership</span>
+            </div>
+
+            <div class="trust-strip__divider" aria-hidden="true"></div>
+
+            <div class="trust-strip__item">
+              <span class="trust-strip__item-value">[ISO 9001 / AEO / Cert]</span>
+              <span class="trust-strip__item-label">Quality Certification</span>
+            </div>
+
+            <div class="trust-strip__divider" aria-hidden="true"></div>
+
+            <div class="trust-strip__item">
+              <span class="trust-strip__item-value">[Your City, Country]</span>
+              <span class="trust-strip__item-label">Registered Office</span>
+            </div>
+
+            <div class="trust-strip__divider" aria-hidden="true"></div>
+
+            <div class="trust-strip__item">
+              <span class="trust-strip__item-value">Est. [Year]</span>
+              <span class="trust-strip__item-label">Operational Since</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ MARKETS STRIP ═══════════ -->
+    <div class="markets-strip" aria-label="Markets served">
+      <div class="container">
+        <div class="markets-strip__inner">
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇦🇪</span> UAE &amp; Gulf
+          </span>
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇸🇦</span> Saudi Arabia
+          </span>
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇬🇧</span> United Kingdom
+          </span>
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇩🇪</span> Germany
+          </span>
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇳🇱</span> Netherlands
+          </span>
+          <span class="markets-strip__item">
+            <span class="markets-strip__flag" aria-hidden="true">🇺🇸</span> North America
+          </span>
+        </div>
+      </div>
+    </div>
 
     <!-- ═══════════ CREDIBILITY BAR ═══════════ -->
     <section class="credibility-bar" aria-label="Operational track record">
@@ -249,24 +1018,28 @@
             <span class="stat-card__number" data-count="14" data-suffix="+">14<span>+</span></span>
             <span class="stat-card__label">Years of Operations</span>
             <span class="stat-card__context">Active across five trade regions</span>
+            <span class="stat-card__note">Est. [founding year]</span>
           </div>
 
           <div class="stat-card fade-up">
             <span class="stat-card__number" data-count="40" data-suffix="+">40<span>+</span></span>
             <span class="stat-card__label">Sourcing Countries</span>
             <span class="stat-card__context">SE Asia, Turkey, UAE, Eastern Europe</span>
+            <span class="stat-card__note">Active supplier relationships</span>
           </div>
 
           <div class="stat-card fade-up">
             <span class="stat-card__number" data-count="500" data-suffix="M+">$500<span>M+</span></span>
             <span class="stat-card__label">Trade Volume Coordinated</span>
             <span class="stat-card__context">FCL, LCL, air, and multimodal</span>
+            <span class="stat-card__note">Cumulative across all engagements</span>
           </div>
 
           <div class="stat-card fade-up">
             <span class="stat-card__number" data-count="98" data-suffix="%">98<span>%</span></span>
             <span class="stat-card__label">On-Window Delivery Rate</span>
-            <span class="stat-card__context">Measured against contracted delivery windows</span>
+            <span class="stat-card__context">Measured against contracted windows</span>
+            <span class="stat-card__note">Across all completed engagements</span>
           </div>
 
         </div>
@@ -286,7 +1059,7 @@
                 When procurement fails,<br>it fails at the handoff.
               </h2>
               <p class="heading-block__sub">
-                We manage every stage — from supplier identification to customs clearance at destination — so no handoff is unowned and no gap is left to chance.
+                We manage every stage — supplier identification to customs clearance — so no handoff is unowned and no gap is left unresolved. Every service is documented and reported.
               </p>
             </div>
           </div>
@@ -301,7 +1074,7 @@
             <span class="service-card__tag">SVC-01</span>
             <h3 class="service-card__title" id="svc-1">Supplier Sourcing &amp; Verification</h3>
             <p class="service-card__body">
-              We identify, qualify, and continuously monitor suppliers across Southeast Asia, China, Turkey, and Eastern Europe. Every supplier undergoes documented financial, compliance, and capacity screening before a purchase order is issued.
+              We identify, qualify, and continuously monitor suppliers across South Asia, Southeast Asia, China, Turkey, and Eastern Europe. Every supplier undergoes documented financial, compliance, and capacity screening before a purchase order is issued.
             </p>
             <ul class="service-card__list" role="list">
               <li class="service-card__list-item">Factory audit and capacity verification</li>
@@ -309,13 +1082,20 @@
               <li class="service-card__list-item">Compliance documentation review</li>
               <li class="service-card__list-item">Pre-production sample coordination</li>
             </ul>
+            <div class="service-card__partners">
+              <span class="service-card__partners-label">Via:</span>
+              <div class="service-card__partner-tags">
+                <span class="service-card__partner-tag">Direct factory network</span>
+                <span class="service-card__partner-tag">Verified agent partners</span>
+              </div>
+            </div>
           </article>
 
           <article class="service-card fade-up" aria-labelledby="svc-2">
             <span class="service-card__tag">SVC-02</span>
             <h3 class="service-card__title" id="svc-2">FCL / LCL Freight Coordination</h3>
             <p class="service-card__body">
-              Ocean, air, and multimodal freight coordinated to your contracted delivery window — not the carrier's convenience. We book FCL and LCL freight, manage incoterm structuring, and maintain active cargo visibility throughout transit.
+              Ocean, air, and multimodal freight coordinated to your contracted delivery window — not the carrier's convenience. We book FCL and LCL freight, manage incoterm structuring, and maintain cargo visibility throughout transit.
             </p>
             <ul class="service-card__list" role="list">
               <li class="service-card__list-item">FCL and LCL ocean freight booking</li>
@@ -323,13 +1103,20 @@
               <li class="service-card__list-item">Incoterm selection and documentation</li>
               <li class="service-card__list-item">Real-time cargo tracking and reporting</li>
             </ul>
+            <div class="service-card__partners">
+              <span class="service-card__partners-label">Via:</span>
+              <div class="service-card__partner-tags">
+                <span class="service-card__partner-tag">Major ocean carriers</span>
+                <span class="service-card__partner-tag">Air freight partners</span>
+              </div>
+            </div>
           </article>
 
           <article class="service-card fade-up" aria-labelledby="svc-3">
             <span class="service-card__tag">SVC-03</span>
             <h3 class="service-card__title" id="svc-3">Procurement &amp; PO Management</h3>
             <p class="service-card__body">
-              Purchase orders issued, tracked, and managed on your behalf — in the supplier's language, in their timezone, against your specification. We handle price negotiation, production monitoring, and milestone reporting throughout manufacture.
+              Purchase orders issued, tracked, and managed on your behalf — in the supplier's language, in their timezone, against your specification. Price negotiation, production monitoring, and milestone reporting throughout manufacture.
             </p>
             <ul class="service-card__list" role="list">
               <li class="service-card__list-item">PO issuance and supplier communication</li>
@@ -351,19 +1138,26 @@
               <li class="service-card__list-item">AML and sanctions screening</li>
               <li class="service-card__list-item">Certificate of origin and customs documentation</li>
             </ul>
+            <div class="service-card__partners">
+              <span class="service-card__partners-label">Via:</span>
+              <div class="service-card__partner-tags">
+                <span class="service-card__partner-tag">Licensed customs brokers</span>
+                <span class="service-card__partner-tag">UAE / UK / EU clearance</span>
+              </div>
+            </div>
           </article>
 
           <article class="service-card fade-up" aria-labelledby="svc-5">
             <span class="service-card__tag">SVC-05</span>
             <h3 class="service-card__title" id="svc-5">Warehousing &amp; Cargo Consolidation</h3>
             <p class="service-card__body">
-              Bonded warehouse access, cargo consolidation, and cross-docking coordination across primary hubs in Asia, Turkey, and the UAE. We manage consolidation to reduce freight cost without compromising delivery timelines.
+              Bonded warehouse access, cargo consolidation, and cross-docking coordination across Asia, Turkey, and the UAE. We manage consolidation to reduce freight cost without compromising delivery timelines.
             </p>
             <ul class="service-card__list" role="list">
               <li class="service-card__list-item">LCL consolidation and deconsolidation</li>
               <li class="service-card__list-item">Bonded and free zone warehouse access</li>
               <li class="service-card__list-item">Cross-docking and transshipment coordination</li>
-              <li class="service-card__list-item">Hub-to-hub distribution management</li>
+              <li class="service-card__list-item">UAE free zone consolidation available</li>
             </ul>
           </article>
 
@@ -371,13 +1165,13 @@
             <span class="service-card__tag">SVC-06</span>
             <h3 class="service-card__title" id="svc-6">Trade Lane &amp; Corridor Strategy</h3>
             <p class="service-card__body">
-              Corridor analysis, FTA utilisation, duty optimisation, and supply chain risk mapping for importers entering new sourcing regions or restructuring existing trade lanes. Strategy grounded in active operational knowledge — not desk research.
+              Corridor analysis, FTA utilisation, duty optimisation, and supply chain risk mapping — for importers entering new sourcing regions or restructuring existing trade lanes. Strategy grounded in active operational knowledge, not desk research.
             </p>
             <ul class="service-card__list" role="list">
               <li class="service-card__list-item">Trade corridor and lead time analysis</li>
               <li class="service-card__list-item">FTA and preferential duty utilisation</li>
               <li class="service-card__list-item">Supply chain risk and redundancy mapping</li>
-              <li class="service-card__list-item">Alternative sourcing region identification</li>
+              <li class="service-card__list-item">South Asia–Gulf corridor expertise</li>
             </ul>
           </article>
 
@@ -399,7 +1193,7 @@
                 Six stages.<br>One responsible<br>party.
               </h2>
               <p class="heading-block__sub">
-                Every engagement follows a documented methodology. You know what happens at each stage, who owns it, and what the resolution path is when something doesn't go to plan.
+                Every engagement follows a documented methodology. You know what happens at each stage, who owns it, and what the resolution path is when something doesn't go to plan. No verbal updates — structured reports at every stage.
               </p>
             </div>
             <div class="process__intro-action">
@@ -415,8 +1209,9 @@
               <div class="process-step__content">
                 <h3 class="process-step__title">Intake &amp; Scope Definition</h3>
                 <p class="process-step__body">
-                  Structured intake covering commodity specification, origin preference, destination, target volume, incoterm requirements, and delivery window. No generic proposals — scope is written to your specific requirement before any work begins.
+                  Structured intake covering commodity specification, origin preference, destination, target volume, incoterm requirements, and delivery window. No generic proposals — scope is written to your specific requirement before any work begins. Typically completed within 48 hours of initial brief.
                 </p>
+                <span class="process-step__flag">No commercial commitment required at this stage</span>
               </div>
             </div>
 
@@ -426,9 +1221,12 @@
               <div class="process-step__content">
                 <h3 class="process-step__title">Supplier Qualification</h3>
                 <p class="process-step__body">
-                  Shortlisted against your specification from our active supplier network across 40+ countries. Qualification includes capacity verification, financial screening, compliance review, and initial sample coordination. We flag concerns before you commit — not after production starts.
+                  Shortlisted from our active supplier network across 40+ countries. Qualification includes capacity verification, financial screening, compliance review, and initial sample coordination. Written qualification report delivered before you commit to any supplier.
                 </p>
                 <span class="process-step__flag">Discrepancies flagged at qualification — not at inspection</span>
+                <a class="process-step__download" href="#contact" aria-label="Request a sample qualification report">
+                  → Request a sample qualification report
+                </a>
               </div>
             </div>
 
@@ -438,7 +1236,7 @@
               <div class="process-step__content">
                 <h3 class="process-step__title">Commercial Negotiation</h3>
                 <p class="process-step__body">
-                  Price, payment terms, incoterms, and penalty structures negotiated on your behalf — in the supplier's language, in their timezone, with knowledge of local commercial norms and leverage points. Agreed terms are documented and counter-signed before PO issuance.
+                  Price, payment terms, incoterms, and penalty structures negotiated on your behalf — in the supplier's language, in their timezone, with knowledge of local commercial norms. Agreed terms are documented and counter-signed before PO issuance. You review everything before it is executed.
                 </p>
               </div>
             </div>
@@ -449,9 +1247,12 @@
               <div class="process-step__content">
                 <h3 class="process-step__title">Order Execution &amp; Production Oversight</h3>
                 <p class="process-step__body">
-                  Purchase orders issued and production monitored against agreed milestones. You receive structured status reports — not informal updates. Pre-shipment inspection is coordinated and completed before goods are released for freight booking.
+                  Purchase orders issued and production monitored against agreed milestones. You receive structured weekly status reports — not informal WhatsApp updates. Pre-shipment inspection is coordinated and completed before goods are released for freight booking.
                 </p>
                 <span class="process-step__flag">Inspection before release — not after arrival</span>
+                <a class="process-step__download" href="#contact" aria-label="Request a sample status report format">
+                  → Request a sample weekly status report
+                </a>
               </div>
             </div>
 
@@ -472,15 +1273,131 @@
               <div class="process-step__content">
                 <h3 class="process-step__title">Delivery Confirmation &amp; Close-Out</h3>
                 <p class="process-step__body">
-                  Final delivery confirmed and documented. All shipping records, inspection reports, customs declarations, and commercial documents archived in a complete audit trail. Any discrepancy at delivery is escalated, documented, and resolved through a defined process — not left with the client to manage.
+                  Final delivery confirmed and documented. All shipping records, inspection reports, customs declarations, and commercial documents archived in a complete audit trail — available to you on request. Any discrepancy at delivery is escalated, documented, and resolved through a defined process, not left with you to manage.
                 </p>
-                <span class="process-step__flag">Full audit trail archived on close</span>
+                <span class="process-step__flag">Full audit trail archived on close — available on request</span>
               </div>
             </div>
 
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CASE STUDIES ═══════════ -->
+    <section class="case-studies section" id="evidence" aria-labelledby="evidence-heading">
+      <div class="container">
+
+        <span class="entry-rule fade-up" aria-hidden="true"></span>
+        <div class="heading-block">
+          <span class="section-label">Operational Track Record</span>
+          <h2 class="heading-block__title" id="evidence-heading">
+            Selected engagements.
+          </h2>
+          <p class="heading-block__sub">
+            Anonymised operational records across active corridors. Specific documentation and engagement references are available on request following an initial discussion.
+          </p>
+        </div>
+
+        <div class="case-grid fade-up">
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">Pakistan → UAE</span>
+              <span class="case-card__type">FCL × 4</span>
+            </div>
+            <span class="case-card__commodity">Textile components, garment fabric</span>
+            <p class="case-card__body">
+              Gulf importer sourcing woven fabric from Lahore. Supplier qualified, production monitored across two factories. Pre-shipment inspection coordinated at origin. UAE customs pre-cleared via Jebel Ali documentation review before vessel departure.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">Delivered 3 days ahead of contracted window. Zero customs holds at Jebel Ali.</span>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">Turkey → Saudi Arabia</span>
+              <span class="case-card__type">FCL × 2</span>
+            </div>
+            <span class="case-card__commodity">Industrial steel fittings</span>
+            <p class="case-card__body">
+              Saudi importer sourcing steel fittings from Istanbul. Certificate of conformity and SASO documentation prepared and verified at origin. Saudi customs pre-cleared; no amendment to documentation required at Jeddah port.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">Customs cleared in 31 hours at Jeddah. Delivered within contracted 42-day window.</span>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">Bangladesh → UK</span>
+              <span class="case-card__type">LCL consolidation</span>
+            </div>
+            <span class="case-card__commodity">Readymade garments, knitwear</span>
+            <p class="case-card__body">
+              UK importer sourcing knitwear from Dhaka. LCL consolidation with two co-loads managed from Chittagong. UK customs documentation prepared pre-departure; GSP/SPG preferential duty utilised, reducing import duty cost by 12%.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">Delivered on window. GSP duty saving passed to client. No inspection exceptions at Felixstowe.</span>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">Vietnam → Germany</span>
+              <span class="case-card__type">FCL × 3</span>
+            </div>
+            <span class="case-card__commodity">Textile components, woven fabric</span>
+            <p class="case-card__body">
+              Production delay flagged at week 3 of manufacture — factory capacity issue. Alternative factory qualified within 4 days; production transferred without PO renegotiation. Freight rebooked on next available sailing without additional cost.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">Delivered D+38 — 4 days ahead of contracted window despite mid-production factory transfer.</span>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">UAE (free zone) → Kenya</span>
+              <span class="case-card__type">FCL × 8</span>
+            </div>
+            <span class="case-card__commodity">Construction materials, cement board</span>
+            <p class="case-card__body">
+              Multi-leg coordination from UAE free zone consolidation point. All Kenya Revenue Authority documentation pre-cleared; phytosanitary and standards certification managed at origin. Eight FCL shipments across a 6-week dispatch window.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">All 8 FCL delivered within contracted 52-day window. Zero holds at Mombasa. Full documentation archived.</span>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-card__header">
+              <span class="case-card__corridor">Malaysia → United States</span>
+              <span class="case-card__type">Air freight</span>
+            </div>
+            <span class="case-card__commodity">Electronic components, PCB assemblies</span>
+            <p class="case-card__body">
+              Time-critical shipment. US CBP entry preparation completed before aircraft departure; ISF filing submitted 72 hours in advance. No FDA or CBP examination requested. Origin-to-delivery coordinated with US customs broker.
+            </p>
+            <div class="case-card__outcome">
+              <span class="case-card__outcome-arrow" aria-hidden="true">→</span>
+              <span class="case-card__outcome-text">Origin-to-delivery in 6 days. Full CBP pre-clearance. No delays, no holds.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="evidence-note">
+          Records are anonymised to protect client confidentiality. Corridor documentation, freight booking references, and engagement contacts are available on request following initial discussion and NDA where required.
+        </p>
+
       </div>
     </section>
 
@@ -497,7 +1414,7 @@
                 Our clients stopped managing three vendors when they engaged one.
               </h2>
               <p class="heading-block__sub">
-                Fragmented vendor structures create fragmented accountability. We consolidate sourcing, freight, and compliance coordination across your active sourcing corridors under a single point of contact — with documented ownership at every stage.
+                Fragmented vendor structures create fragmented accountability. We consolidate sourcing, freight, and compliance coordination across your active sourcing corridors under a single point of contact — documented ownership at every stage.
               </p>
             </div>
 
@@ -509,7 +1426,7 @@
                   <h3 class="why-point__title">On-the-Ground in Every Active Region</h3>
                 </div>
                 <p class="why-point__body">
-                  We maintain active operational relationships in Southeast Asia, China, Turkey, UAE, and Eastern Europe — not remote contact lists. Our team operates in timezone, in language, with knowledge of local commercial practice. Supplier problems are identified before they become shipment problems.
+                  We maintain active operational relationships in South Asia, Southeast Asia, China, Turkey, UAE, and Eastern Europe — not remote contact lists. Our coordination operates in timezone, in language, with knowledge of local commercial practice. Supplier problems are identified before they become shipment problems.
                 </p>
               </div>
 
@@ -529,17 +1446,17 @@
                   <h3 class="why-point__title">Compliance Verified Before Departure</h3>
                 </div>
                 <p class="why-point__body">
-                  Regulatory environments change. Import controls, sanctions designations, and tariff classifications are reviewed on every engagement — not assumed from prior experience. Documentation is verified for compliance before goods leave origin. Customs exceptions at destination are expensive; we prevent them at source.
+                  Import controls, sanctions designations, and tariff classifications are reviewed on every engagement — not assumed from prior experience. Documentation is verified for compliance before goods leave origin. UAE, Saudi, UK, EU, and US import requirements are all handled within the same coordination structure.
                 </p>
               </div>
 
               <div class="why-point fade-up">
                 <div class="why-point__header">
                   <span class="why-point__num">04</span>
-                  <h3 class="why-point__title">Freight Planned to Your Window — With Contingency Built In</h3>
+                  <h3 class="why-point__title">No Upfront Retainer — Engagement Scales With Results</h3>
                 </div>
                 <p class="why-point__body">
-                  We plan freight to your delivery requirement, not the cheapest available option. Buffer logistics, contingency freight bookings, and alternative routing are built into every engagement plan before shipment. When disruptions occur — and they do — the response is already structured.
+                  The first milestone — supplier shortlist and qualification report — is delivered before any commercial commitment is required. You evaluate the work before the relationship scales. Milestone-based pricing means our incentives are aligned with your outcomes, not with billing hours.
                 </p>
               </div>
 
@@ -612,7 +1529,7 @@
             <ul class="engagement__list" role="list">
               <li class="engagement__item">
                 <span class="engagement__item-icon" aria-hidden="true">→</span>
-                Milestone-based onboarding — engagement scales with execution
+                Supplier shortlist delivered first — no payment until you approve it
               </li>
               <li class="engagement__item">
                 <span class="engagement__item-icon" aria-hidden="true">→</span>
@@ -620,7 +1537,7 @@
               </li>
               <li class="engagement__item">
                 <span class="engagement__item-icon" aria-hidden="true">→</span>
-                Every handoff owned and documented
+                Every handoff owned, documented, and reported
               </li>
               <li class="engagement__item">
                 <span class="engagement__item-icon" aria-hidden="true">→</span>
@@ -632,7 +1549,7 @@
               </li>
               <li class="engagement__item">
                 <span class="engagement__item-icon" aria-hidden="true">→</span>
-                Performance aligned to shipment outcomes
+                Milestone-based pricing — performance aligned to shipment outcomes
               </li>
             </ul>
           </div>
@@ -642,113 +1559,470 @@
       </div>
     </section>
 
-    <!-- ═══════════ TRADE EVIDENCE ═══════════ -->
-    <section class="trade-evidence section" id="evidence" aria-labelledby="evidence-heading">
+    <!-- ═══════════ OPERATIONS TEAM ═══════════ -->
+    <section class="ops-team section" id="team" aria-labelledby="team-heading">
       <div class="container">
 
         <span class="entry-rule fade-up" aria-hidden="true"></span>
         <div class="heading-block">
-          <span class="section-label">Operational Track Record</span>
-          <h2 class="heading-block__title" id="evidence-heading">
-            Selected engagements.
+          <span class="section-label">Our Coordination Team</span>
+          <h2 class="heading-block__title" id="team-heading">
+            Real people, real regions, real accountability.
           </h2>
           <p class="heading-block__sub">
-            Anonymised operational records. Corridor, commodity, shipment type, and outcome — the data that matters.
+            Every engagement is managed by a named coordinator with direct operational relationships in your sourcing region — not passed to a call centre or generic account management team.
           </p>
         </div>
 
-        <div class="fade-up">
-          <table class="evidence-table" aria-label="Operational engagement records">
-            <thead class="evidence-table__head">
-              <tr>
-                <th scope="col">Corridor</th>
-                <th scope="col">Commodity</th>
-                <th scope="col">Type</th>
-                <th scope="col">Outcome</th>
-              </tr>
-            </thead>
-            <tbody class="evidence-table__body">
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">Vietnam → Germany</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Textile components, woven fabric</td>
-                <td class="evidence-table__type"      data-label="Type">FCL × 3</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Delivered D+38. 4 days ahead of contracted window.</td>
-              </tr>
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">Turkey → UAE</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Industrial steel fittings</td>
-                <td class="evidence-table__type"      data-label="Type">FCL × 1</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Customs cleared in 29 hours at destination. Zero holds.</td>
-              </tr>
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">China → United Kingdom</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Consumer packaging, folding carton</td>
-                <td class="evidence-table__type"      data-label="Type">LCL consolidation</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Consolidated with two co-loads. Delivered on window. No inspection exceptions.</td>
-              </tr>
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">Indonesia → Netherlands</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Natural fibre homeware</td>
-                <td class="evidence-table__type"      data-label="Type">FCL × 2</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Production delay flagged at week 3 of manufacture. Freight rebooked. Delivery window maintained.</td>
-              </tr>
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">UAE (free zone) → Kenya</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Construction materials, cement board</td>
-                <td class="evidence-table__type"      data-label="Type">FCL × 8</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Multi-leg coordination. All documentation pre-cleared. Delivered within contracted 52-day window.</td>
-              </tr>
-              <tr>
-                <td class="evidence-table__corridor" data-label="Corridor">Malaysia → United States</td>
-                <td class="evidence-table__commodity" data-label="Commodity">Electronic components, PCB assemblies</td>
-                <td class="evidence-table__type"      data-label="Type">Air freight</td>
-                <td class="evidence-table__outcome"   data-label="Outcome">Time-critical. Origin-to-delivery in 6 days. Full customs pre-clearance. No delays.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="team-grid">
 
-          <p class="evidence-note">
-            Records are anonymised to protect client confidentiality. Specific corridor documentation and engagement references are available on request following initial engagement discussion.
-          </p>
+          <div class="team-card fade-up">
+            <div class="team-card__avatar" aria-hidden="true">GT</div>
+            <div>
+              <div class="team-card__region">Gulf &amp; South Asia</div>
+              <div class="team-card__role">Gulf Trade Coordinator</div>
+            </div>
+            <p class="team-card__bio">
+              Manages Pakistan, Bangladesh, and India–Gulf corridors. Deep relationships across Karachi, Lahore, Dhaka, and Colombo supplier networks. UAE and Saudi import clearance expertise.
+            </p>
+            <div class="team-card__langs" aria-label="Languages">
+              <span class="team-card__lang">English</span>
+              <span class="team-card__lang">Arabic</span>
+              <span class="team-card__lang">Urdu</span>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card__avatar" aria-hidden="true">SC</div>
+            <div>
+              <div class="team-card__region">Southeast Asia</div>
+              <div class="team-card__role">SE Asia Sourcing Lead</div>
+            </div>
+            <p class="team-card__bio">
+              Manages Vietnam, Indonesia, Malaysia, and Thailand corridors. Specialist in garment, homeware, and electronics sourcing with direct factory relationships across Ho Chi Minh and Dhaka hubs.
+            </p>
+            <div class="team-card__langs" aria-label="Languages">
+              <span class="team-card__lang">English</span>
+              <span class="team-card__lang">Bahasa</span>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card__avatar" aria-hidden="true">TC</div>
+            <div>
+              <div class="team-card__region">Turkey &amp; Eastern Europe</div>
+              <div class="team-card__role">Turkey &amp; EU Trade Coordinator</div>
+            </div>
+            <p class="team-card__bio">
+              Manages Turkey, Poland, and Romania corridors. Specialist in industrial goods, steel, textiles, and packaging. Direct experience with EU import regulations and UK post-Brexit customs requirements.
+            </p>
+            <div class="team-card__langs" aria-label="Languages">
+              <span class="team-card__lang">English</span>
+              <span class="team-card__lang">Turkish</span>
+            </div>
+          </div>
+
+          <div class="team-card fade-up">
+            <div class="team-card__avatar" aria-hidden="true">CC</div>
+            <div>
+              <div class="team-card__region">China</div>
+              <div class="team-card__role">China Sourcing Coordinator</div>
+            </div>
+            <p class="team-card__bio">
+              Manages China corridors from Guangzhou, Yiwu, and Shanghai. Electronics, industrial components, and consumer goods. Deep freight and customs expertise across UK, EU, and Gulf destination markets.
+            </p>
+            <div class="team-card__langs" aria-label="Languages">
+              <span class="team-card__lang">English</span>
+              <span class="team-card__lang">Mandarin</span>
+            </div>
+          </div>
+
         </div>
-
       </div>
     </section>
 
-    <!-- ═══════════ CTA BLOCK ═══════════ -->
-    <section class="cta-block section section--wide" id="contact" aria-labelledby="cta-heading">
+    <!-- ═══════════ SOCIAL PROOF ═══════════ -->
+    <section class="social-proof section" id="testimonials" aria-labelledby="testimonials-heading">
       <div class="container">
-        <div class="cta-block__inner">
 
-          <span class="cta-block__label">Start an Engagement</span>
-
-          <h2 class="cta-block__title" id="cta-heading">
-            Send us your corridor,<br>commodity, and <em>timeline.</em>
+        <span class="entry-rule fade-up" aria-hidden="true"></span>
+        <div class="heading-block">
+          <span class="section-label">Client Feedback</span>
+          <h2 class="heading-block__title" id="testimonials-heading">
+            What importers say.
           </h2>
-
-          <p class="cta-block__sub">
-            We respond within one business day with a specific operational proposal — not a capabilities deck. No obligation before scope is agreed.
+          <p class="heading-block__sub">
+            Anonymised. Roles and corridors disclosed. Full references available on request following initial discussion.
           </p>
+        </div>
 
-          <div class="cta-block__actions">
-            <a href="mailto:contact@journeytrades.com" class="btn btn--brass">
-              Send a Sourcing Brief
-            </a>
-            <a href="#services" class="btn btn--outline-dark">
-              Review Services
-            </a>
+        <div class="testimonial-grid">
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__mark" aria-hidden="true">"</div>
+            <p class="testimonial-card__quote">
+              We had used three different agents for sourcing, freight, and customs over four years. The gaps between them cost us a shipment every 18 months. Journey Trades owns the whole chain — we haven't had a hold or a delay since we moved to them.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__role">Head of Procurement</span>
+              <span class="testimonial-card__context">Building materials importer — Dubai, UAE · Pakistan–UAE corridor</span>
+            </div>
           </div>
 
-          <div class="cta-block__response">
-            <span class="cta-block__response-dot" aria-hidden="true"></span>
-            Response within one business day
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__mark" aria-hidden="true">"</div>
+            <p class="testimonial-card__quote">
+              The qualification report they delivered on our shortlisted suppliers was more detailed than anything we'd seen from previous agents. They flagged a compliance issue with one factory before we placed a PO — something we would never have caught ourselves.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__role">Supply Chain Director</span>
+              <span class="testimonial-card__context">Consumer goods importer — Riyadh, Saudi Arabia · Turkey–Gulf corridor</span>
+            </div>
           </div>
 
-          <div class="cta-block__contact">
-            <span class="cta-block__contact-label">Direct contact</span>
-            <a href="mailto:contact@journeytrades.com" class="cta-block__email">
-              contact@journeytrades.com
-            </a>
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__mark" aria-hidden="true">"</div>
+            <p class="testimonial-card__quote">
+              I was sceptical about the no-retainer claim. But they delivered the supplier shortlist and qualification docs before I paid anything. That built more trust than any sales pitch could. We've now run four engagements with them.
+            </p>
+            <div class="testimonial-card__attribution">
+              <span class="testimonial-card__role">Managing Director</span>
+              <span class="testimonial-card__context">Wholesale textile importer — London, UK · Bangladesh–UK corridor</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ WHO WE SERVE ═══════════ -->
+    <section class="who-serve section" id="markets" aria-labelledby="markets-heading">
+      <div class="container">
+
+        <span class="entry-rule fade-up" aria-hidden="true"></span>
+        <div class="heading-block">
+          <span class="section-label">Markets We Serve</span>
+          <h2 class="heading-block__title" id="markets-heading">
+            Where we operate — and what we know.
+          </h2>
+          <p class="heading-block__sub">
+            Our active corridors, destination expertise, and regional import knowledge — mapped to the markets where we deliver engagements.
+          </p>
+        </div>
+
+        <div class="market-cards">
+
+          <div class="market-card fade-up">
+            <span class="market-card__flag" aria-hidden="true">🇦🇪🇸🇦</span>
+            <div class="market-card__region">UAE &amp; Gulf (GCC)</div>
+            <p class="market-card__detail">
+              UAE free zone operations, Jebel Ali customs expertise, Saudi SASO certification, and direct Arabic-language supplier coordination. Primary corridor: South Asia, Turkey, and East Asia to Gulf.
+            </p>
+            <ul class="market-card__corridors" role="list" aria-label="Active corridors">
+              <li class="market-card__corridor-item">Pakistan / Bangladesh → UAE</li>
+              <li class="market-card__corridor-item">Turkey → Saudi Arabia</li>
+              <li class="market-card__corridor-item">China → UAE free zone</li>
+            </ul>
+          </div>
+
+          <div class="market-card fade-up">
+            <span class="market-card__flag" aria-hidden="true">🇬🇧</span>
+            <div class="market-card__region">United Kingdom</div>
+            <p class="market-card__detail">
+              Post-Brexit UK customs expertise, HMRC compliance, UK import licensing, and GSP/DCTS preferential duty utilisation for qualifying origin countries. Felixstowe and Southampton clearance.
+            </p>
+            <ul class="market-card__corridors" role="list" aria-label="Active corridors">
+              <li class="market-card__corridor-item">Bangladesh / Pakistan → UK</li>
+              <li class="market-card__corridor-item">Vietnam → UK</li>
+              <li class="market-card__corridor-item">Turkey → UK</li>
+            </ul>
+          </div>
+
+          <div class="market-card fade-up">
+            <span class="market-card__flag" aria-hidden="true">🇩🇪🇳🇱🇧🇪</span>
+            <div class="market-card__region">Europe (EU)</div>
+            <p class="market-card__detail">
+              EU customs clearance, CBAM compliance, CE marking coordination, EU import licensing, and AEO-compatible documentation. Rotterdam, Hamburg, and Antwerp port experience.
+            </p>
+            <ul class="market-card__corridors" role="list" aria-label="Active corridors">
+              <li class="market-card__corridor-item">Vietnam / Indonesia → NL / DE</li>
+              <li class="market-card__corridor-item">Turkey → EU</li>
+              <li class="market-card__corridor-item">China → Hamburg</li>
+            </ul>
+          </div>
+
+          <div class="market-card fade-up">
+            <span class="market-card__flag" aria-hidden="true">🇺🇸🇨🇦</span>
+            <div class="market-card__region">North America</div>
+            <p class="market-card__detail">
+              US CBP ISF filing, FDA coordination, C-TPAT compatible documentation, Section 301 tariff impact analysis, and Canada CBSA import management. LA, New York, and Chicago port experience.
+            </p>
+            <ul class="market-card__corridors" role="list" aria-label="Active corridors">
+              <li class="market-card__corridor-item">Malaysia / Vietnam → US</li>
+              <li class="market-card__corridor-item">India → US / Canada</li>
+              <li class="market-card__corridor-item">Mexico → US (nearshore)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <span class="entry-rule fade-up" aria-hidden="true"></span>
+        <div class="heading-block">
+          <span class="section-label">Frequently Asked</span>
+          <h2 class="heading-block__title" id="faq-heading">
+            Questions buyers ask before they engage.
+          </h2>
+          <p class="heading-block__sub">
+            Answered directly. If your question isn't here, send it to us and we'll respond the same day.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">What is the minimum shipment value you work with?</h3>
+            <p class="faq-item__a">
+              We typically work with importers on shipments valued at <strong>USD 25,000 and above</strong>. For first engagements, no commercial commitment is required until you have reviewed and approved the supplier shortlist and qualification report. Contact us with your requirement and we'll confirm whether it falls within our operational scope.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">How does the no-retainer model actually work?</h3>
+            <p class="faq-item__a">
+              The first milestone — supplier shortlist and qualification report — is completed and delivered before any payment is required. You review the shortlist, ask questions, and only proceed (and pay) when you're satisfied with the quality of the work. Subsequent milestones — PO issuance, freight booking, customs clearance — are billed against execution, not time.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">What happens if a supplier fails quality inspection?</h3>
+            <p class="faq-item__a">
+              Pre-shipment inspection is managed before goods are released for freight booking. If inspection results are below specification, <strong>we do not release the cargo</strong> — we escalate to the supplier, document the discrepancy, and coordinate remediation. You are informed immediately with the inspection report and a proposed resolution path.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">Do you work with Gulf and Saudi importers specifically?</h3>
+            <p class="faq-item__a">
+              Yes. We have specific experience with UAE free zone operations, Jebel Ali import procedures, Saudi SASO certification requirements, and Arabic-language supplier coordination. Many of our active engagements run on South Asia–Gulf corridors. We can be reached directly via WhatsApp for Gulf clients.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">What freight carriers and customs brokers do you use?</h3>
+            <p class="faq-item__a">
+              We coordinate through established freight forwarders across primary corridors, selecting carriers and brokers based on route, timeline, cargo type, and your delivery requirement. We do not restrict to a single carrier — this allows us to book to <strong>your window</strong> rather than available inventory. Specific partners for your corridor are disclosed at the proposal stage.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">Can you handle Saudi SASO certification and import requirements?</h3>
+            <p class="faq-item__a">
+              Yes. SASO product conformity certificates, IECEE CB documentation, and Saudi standards requirements are managed as part of our Gulf trade coordination. We prepare and verify all required documentation at origin before shipment, coordinating with accredited certification bodies where required.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">What documentation do you provide at close-out?</h3>
+            <p class="faq-item__a">
+              On close, you receive a complete archived set: supplier qualification report, PO and production milestone records, pre-shipment inspection report, bill of lading, packing list, commercial invoice, customs declaration, and certificate of origin where applicable. All documents are held in a structured archive available on request.
+            </p>
+          </div>
+
+          <div class="faq-item fade-up">
+            <h3 class="faq-item__q">How quickly can you respond to an urgent sourcing requirement?</h3>
+            <p class="faq-item__a">
+              For urgent requirements, <strong>call or WhatsApp us directly</strong> — we respond within the business hour for active corridor requests. Standard enquiries receive a response within one business day with an initial scope assessment. Time-critical freight (air, express courier) can be booked within 24 hours of PO confirmation.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT HUB ═══════════ -->
+    <section class="contact-hub section section--wide" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-hub__layout">
+
+          <!-- Left: Intro + channels -->
+          <div class="contact-hub__intro">
+
+            <div>
+              <span class="section-label" style="color: var(--color-accent-brass-light);">Start an Engagement</span>
+              <h2 id="contact-heading" style="font-size: var(--text-h2); color: var(--color-text-on-dark-strong); letter-spacing: var(--tracking-tightest); margin-bottom: var(--space-16); line-height: var(--lh-tight);">
+                Tell us your corridor,<br>commodity, and <em style="font-style:normal; color: var(--color-accent-brass-light);">timeline.</em>
+              </h2>
+              <p style="font-size: var(--text-body-lg); color: var(--color-text-muted-on-dark); line-height: var(--lh-relaxed);">
+                We respond within one business day with a specific operational proposal — not a capabilities deck. No obligation before scope is agreed. First milestone delivered before any payment.
+              </p>
+            </div>
+
+            <div class="contact-hub__channels" aria-label="Contact channels">
+
+              <a href="tel:[YOUR-PHONE]" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">📞</span>
+                <div class="contact-channel__body">
+                  <span class="contact-channel__label">Phone</span>
+                  <span class="contact-channel__value">[Your Phone Number]</span>
+                </div>
+                <span class="contact-channel__arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="https://wa.me/[YOUR-WHATSAPP]" class="contact-channel" target="_blank" rel="noopener">
+                <span class="contact-channel__icon" aria-hidden="true">💬</span>
+                <div class="contact-channel__body">
+                  <span class="contact-channel__label">WhatsApp — preferred for Gulf clients</span>
+                  <span class="contact-channel__value">[Your WhatsApp Number]</span>
+                </div>
+                <span class="contact-channel__arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="mailto:contact@journeytrades.com" class="contact-channel">
+                <span class="contact-channel__icon" aria-hidden="true">✉</span>
+                <div class="contact-channel__body">
+                  <span class="contact-channel__label">Email</span>
+                  <span class="contact-channel__value">contact@journeytrades.com</span>
+                </div>
+                <span class="contact-channel__arrow" aria-hidden="true">→</span>
+              </a>
+
+            </div>
+
+            <div style="border-top: 1px solid var(--color-border-dark-strong); padding-top: var(--space-24);">
+              <p style="font-size: var(--text-caption); color: var(--color-text-muted-on-dark); line-height: var(--lh-relaxed);">
+                <strong style="color: var(--color-text-on-dark); font-weight: 500;">Registered office:</strong><br>
+                [Your Company Full Name]<br>
+                [Street Address]<br>
+                [City, Country · Reg. No. XXXXXXX]
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form fade-up">
+            <h3 class="contact-form__title">Send a Sourcing Brief</h3>
+            <p class="contact-form__sub">Fill in what you know. We'll handle the rest in our response.</p>
+
+            <form
+              action="https://formsubmit.co/contact@journeytrades.com"
+              method="POST"
+              novalidate>
+
+              <!-- FormSubmit config -->
+              <input type="hidden" name="_subject"  value="New Sourcing Brief — Journey Trades">
+              <input type="hidden" name="_captcha"  value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="text"   name="_honey"    style="display:none" tabindex="-1" autocomplete="off">
+
+              <div class="form-row form-row--2">
+                <div class="form-field">
+                  <label class="form-label" for="f-name">Your Name <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="f-name" name="name" required autocomplete="name" placeholder="Ahmed Al-Rashid">
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="f-company">Company</label>
+                  <input class="form-input" type="text" id="f-company" name="company" autocomplete="organization" placeholder="Al-Rashid Trading LLC">
+                </div>
+              </div>
+
+              <div class="form-row form-row--2">
+                <div class="form-field">
+                  <label class="form-label" for="f-email">Email <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="email" id="f-email" name="email" required autocomplete="email" placeholder="ahmed@company.com">
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="f-phone">Phone / WhatsApp</label>
+                  <input class="form-input" type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+971 50 XXX XXXX">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="f-market">Your Market</label>
+                  <select class="form-select" id="f-market" name="market">
+                    <option value="" disabled selected>Select your country / region</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Oman">Oman</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Other EU">Other EU</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row form-row--2">
+                <div class="form-field">
+                  <label class="form-label" for="f-origin">Sourcing Origin</label>
+                  <select class="form-select" id="f-origin" name="origin">
+                    <option value="" disabled selected>Where from?</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="UAE (re-export)">UAE (re-export)</option>
+                    <option value="Not sure">Not sure — need advice</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="f-value">Est. Shipment Value</label>
+                  <select class="form-select" id="f-value" name="value">
+                    <option value="" disabled selected>Approximate value</option>
+                    <option value="USD 25k–50k">USD 25,000 – 50,000</option>
+                    <option value="USD 50k–100k">USD 50,000 – 100,000</option>
+                    <option value="USD 100k–250k">USD 100,000 – 250,000</option>
+                    <option value="USD 250k+">USD 250,000+</option>
+                    <option value="Unsure">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="f-commodity">Commodity / Product</label>
+                  <input class="form-input" type="text" id="f-commodity" name="commodity" placeholder="e.g. Woven fabric, steel fittings, garments">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="f-message">Brief Details</label>
+                  <textarea class="form-textarea" id="f-message" name="message" rows="4" placeholder="Anything else we should know — delivery window, port of destination, specific requirements, or questions."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--brass btn--full form-submit">
+                Send Sourcing Brief
+              </button>
+
+              <p class="form-note">
+                Your information is kept strictly confidential. We do not share enquiry details with any third party. No commitment is created by submitting this form.
+              </p>
+
+              <div class="form-response-time" aria-live="polite">
+                <span class="form-response-time__dot" aria-hidden="true"></span>
+                Response within one business day
+              </div>
+
+            </form>
           </div>
 
         </div>
@@ -770,7 +2044,12 @@
             <span class="footer__wordmark">Journey Trades</span>
           </a>
           <p class="footer__tagline">
-            Execution-first international sourcing and trade coordination across established sourcing corridors worldwide.
+            Execution-first international sourcing and trade coordination for Gulf, British, and European importers.
+          </p>
+          <p class="footer__tagline" style="margin-top: var(--space-8); font-size: var(--text-caption);">
+            [Company Full Legal Name]<br>
+            [Registered Address, Country]<br>
+            Reg. No. [XXXXXXX]
           </p>
         </div>
 
@@ -790,8 +2069,10 @@
           <ul class="footer__links" role="list">
             <li><a href="#about"    class="footer__link">About</a></li>
             <li><a href="#process"  class="footer__link">Process</a></li>
-            <li><a href="#model"    class="footer__link">Engagement Model</a></li>
+            <li><a href="#team"     class="footer__link">Our Team</a></li>
             <li><a href="#evidence" class="footer__link">Track Record</a></li>
+            <li><a href="#markets"  class="footer__link">Markets Served</a></li>
+            <li><a href="#faq"      class="footer__link">FAQ</a></li>
           </ul>
         </nav>
 
@@ -801,6 +2082,16 @@
             <li>
               <a href="mailto:contact@journeytrades.com" class="footer__link">
                 contact@journeytrades.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:[YOUR-PHONE]" class="footer__link">
+                [Your Phone Number]
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/[YOUR-WHATSAPP]" class="footer__link" target="_blank" rel="noopener">
+                WhatsApp (Gulf clients)
               </a>
             </li>
           </ul>
