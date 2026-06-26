@@ -1,20 +1,20 @@
 {
   "name": "Journey Trades",
   "short_name": "Journey Trades",
-  "description": "Premium international sourcing and trade coordination.",
+  "description": "Outsourced sourcing and supplier-development partner for international textile buyers, based in Pakistan.",
   "start_url": "/",
   "display": "browser",
-  "theme_color": "#F5F4F0",
-  "background_color": "#F5F4F0",
+  "theme_color": "#111110",
+  "background_color": "#F2F0EB",
   "icons": [
     {
-      "src": "/assets/favicon/icon-192.png",
+      "src": "/assets/favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/favicon/icon-512.png",
+      "src": "/assets/favicon/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
